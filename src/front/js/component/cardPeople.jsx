@@ -19,6 +19,9 @@ const CardPeople = (props) => {
           <Link to={`/people/${props.uid}`} className="btn btn-outline-dark">
             Learn More!
           </Link>
+          <button className="btn btn-outline-warning" id="heart">
+            <i className="fa-solid fa-heart"></i>
+          </button>
         </div>
       </div>
     </>
