@@ -1,3 +1,38 @@
 /* 
     General Styles used on every website (Don't Repeat Yourself)
 */
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 10px 10px 20px 10px;
+  padding-bottom: 20px;
+}
+.navbar {
+  background: black;
+}
+.logo {
+  height: 200px;
+  width: 500px;
+}
+.fav {
+  float: right;
+  margin-right: -30px;
+}
+.characters {
+  height: 45px;
+  width: 350px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.planets {
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.starships {
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}

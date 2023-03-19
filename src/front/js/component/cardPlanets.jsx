@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
-import Jedi from "../../img/jedi.jpeg";
+import GalaticRepublic from "../../img/GalaticRepublic.jpeg";
 
-const CardPeople = (props) => {
+const CardPlanet = (props) => {
   return (
     <>
       <div className="card" style={{ width: "18rem" }}>
-        <img src={Jedi} className="card-img-top" alt="..." />
+        <img src={GalaticRepublic} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.name}</h5>
           <p className="card-text">
@@ -16,7 +16,7 @@ const CardPeople = (props) => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <Link to={`/people/${props.uid}`} className="btn btn-outline-dark">
+          <Link to={`/planets/${props.uid}`} className="btn btn-outline-dark">
             Learn More!
           </Link>
         </div>
@@ -25,4 +25,4 @@ const CardPeople = (props) => {
   );
 };
 
-export default CardPeople;
+export default CardPlanet;
