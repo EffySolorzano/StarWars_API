@@ -3,7 +3,6 @@ import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 import CardPeople from "../component/cardPeople.jsx";
 import CardPlanets from "../component/cardPlanets.jsx";
-import { todoActions } from "../store/todos";
 import CardStarships from "../component/cardStarships.jsx";
 
 const StarWars = () => {

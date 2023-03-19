@@ -18,7 +18,7 @@
 }
 .fav {
   float: right;
-  margin-right: -30px;
+  margin-left: -150px;
 }
 .characters {
   height: 45px;
@@ -38,4 +38,19 @@
 }
 #heart {
   float: right;
+}
+.people-img {
+  height: 300px;
+  width: 300px;
+  margin: 10px 550px 10px 550px;
+}
+#people-text {
+  text-align: center;
+}
+footer span {
+  display: inline-block;
+  margin-right: 10px;
+}
+.text-danger {
+  text-align: center;
 }

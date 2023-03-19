@@ -20,7 +20,7 @@ const CardStarships = (props) => {
             Learn More!
           </Link>
           <button className="btn btn-outline-warning" id="heart">
-            <i className="fa-solid fa-heart"></i>
+            <i className="fa-solid fa-heart text-outline-warning"></i>
           </button>
         </div>
       </div>

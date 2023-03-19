@@ -13,7 +13,9 @@ export const Navbar = () => {
         </Link>
         <img className="galaxy" src={Galaxy} alt="star wars galaxy" />
         <div className="fav">
-          <button className="btn btn-warning">Favorites</button>
+          <button className="btn btn-warning">
+            <h3>Favorites</h3>
+          </button>
         </div>
       </div>
     </nav>
