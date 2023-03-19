@@ -16,7 +16,7 @@ const CardPlanet = (props) => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <Link to={`/planets/${props.uid}`} className="btn btn-outline-dark">
+          <Link to={`/planet/${props.uid}`} className="btn btn-outline-dark">
             Learn More!
           </Link>
           <button className="btn btn-outline-warning" id="heart">

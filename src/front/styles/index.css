@@ -54,3 +54,8 @@ footer span {
 .text-danger {
   text-align: center;
 }
+.planet-img {
+  height: 300px;
+  width: 300px;
+  margin: 10px 550px 10px 550px;
+}
