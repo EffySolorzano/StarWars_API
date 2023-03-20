@@ -7,7 +7,7 @@ const CardStarships = (props) => {
   return (
     <>
       <div className="card" style={{ width: "18rem" }}>
-        <img src={Rebel} className="card-img-top" alt="..." />
+        <img src={Rebel} className="rebel" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.name}</h5>
           <p className="card-text">
@@ -16,7 +16,7 @@ const CardStarships = (props) => {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
-          <Link to={`/planets/${props.uid}`} className="btn btn-outline-dark">
+          <Link to={`/starships/${props.uid}`} className="btn btn-outline-dark">
             Learn More!
           </Link>
           <button className="btn btn-outline-warning" id="heart">
