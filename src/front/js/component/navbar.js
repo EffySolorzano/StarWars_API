@@ -7,6 +7,10 @@ import { Context } from "../store/appContext";
 export const Navbar = () => {
   const { store, actions } = useContext(Context);
 
+  const handleDelete = (itemIndex) => {
+    actions.deleteFavorite(itemIndex);
+  };
+
   return (
     <nav className="navbar navbar-dark">
       <div className="container">
@@ -24,7 +28,7 @@ export const Navbar = () => {
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            Favoritos
+            Favorites
           </div>
           <ul
             className="dropdown-menu list-unstyled"
@@ -34,12 +38,17 @@ export const Navbar = () => {
               <>
                 {store.favoritos.map((item, index) => {
                   return (
-                    <Link key={index} to={item.link}>
-                      <li className="text-center">{item.name}</li>
-                      <button className="btn btn-danger">
+                    <>
+                      <Link key={index} to={item.link}>
+                        <li className="text-left">{item.name}</li>
+                      </Link>
+                      <button
+                        className="btn btn-danger"
+                        onClick={() => handleDelete(index)}
+                      >
                         <i className="fa-solid fa-trash"></i>
                       </button>
-                    </Link>
+                    </>
                   );
                 })}
               </>

@@ -20,9 +20,6 @@
   float: right;
   margin-left: -300px;
 }
-.btn {
-  margin-left: -300px;
-}
 .characters {
   height: 45px;
   width: 350px;
@@ -66,4 +63,8 @@ footer span {
   height: 400px;
   width: 500px;
   margin-left: 450px;
+}
+.dropdown {
+  position: absolute;
+  right: 100px;
 }
