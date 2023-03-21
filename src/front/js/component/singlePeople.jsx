@@ -19,7 +19,7 @@ const SinglePeople = () => {
       }
     };
     cargaDatos();
-  }, []);
+  }, [params.uid]);
 
   return (
     <div className="card col-md-12">
@@ -56,7 +56,6 @@ const SinglePeople = () => {
             <span>Gender: {people.gender ? people.gender : "Unknown"}</span>
           </p>
         </footer>
-
         <Link to="/" className="btn btn-warning">
           Go back
         </Link>

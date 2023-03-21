@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import GalaticRepublic from "../../img/GalaticRepublic.jpeg";
 
 const CardPlanet = (props) => {
+  const { store, actions } = useContext(Context);
   return (
     <>
       <div className="card" style={{ width: "18rem" }}>
@@ -19,7 +20,18 @@ const CardPlanet = (props) => {
           <Link to={`/planet/${props.uid}`} className="btn btn-outline-dark">
             Learn More!
           </Link>
-          <button className="btn btn-outline-warning" id="heart">
+          <button
+            className="btn btn-outline-warning"
+            id="heart"
+            onClick={() => {
+              actions.agregarFavorito({
+                name: props.name,
+                uid: props.uid,
+                category: "planets",
+                link: `/planets/${props.uid}`,
+              });
+            }}
+          >
             <i className="fa-solid fa-heart"></i>
           </button>
         </div>

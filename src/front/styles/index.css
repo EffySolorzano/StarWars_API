@@ -16,9 +16,12 @@
   height: 190px;
   width: 500px;
 }
-.fav {
+.nav-item {
   float: right;
-  margin-left: -150px;
+  margin-left: -300px;
+}
+.btn {
+  margin-left: -300px;
 }
 .characters {
   height: 45px;

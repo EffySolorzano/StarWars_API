@@ -19,7 +19,7 @@ const SingleStarships = () => {
       }
     };
     cargaDatos();
-  }, []);
+  }, [params.uid]);
 
   return (
     <div className="card col-md-12">
