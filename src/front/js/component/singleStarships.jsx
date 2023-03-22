@@ -78,7 +78,6 @@ const SingleStarships = () => {
               Consumables:{" "}
               {starship.consumables ? starship.consumables : "Unknown"}
             </span>
-            <span>Pilots: {starship.pilots ? starship.pilots : "Unknown"}</span>
           </p>
         </footer>
 
