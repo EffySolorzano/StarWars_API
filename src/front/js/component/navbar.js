@@ -13,7 +13,7 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar navbar-dark">
-      <div className="container">
+      <div className="container-fluid">
         <Link to="/">
           <img className="logo" src={Swl} alt="star wars logo" />
         </Link>
@@ -39,21 +39,25 @@ export const Navbar = () => {
                 {store.favoritos.map((item, index) => {
                   return (
                     <>
-                      <Link key={index} to={item.link}>
-                        <li className="text-left">{item.name}</li>
-                      </Link>
-                      <button
-                        className="btn btn-danger"
-                        onClick={() => handleDelete(index)}
-                      >
-                        <i className="fa-solid fa-trash"></i>
-                      </button>
+                      <React.Fragment key={index}>
+                        <Link to={item.link} className="text-left">
+                          <li className="d-flex align-items-center">
+                            {item.name}
+                          </li>
+                        </Link>
+                        <button
+                          className="btn btn-sm btn-danger"
+                          onClick={() => handleDelete(index)}
+                        >
+                          <i className="fa-solid fa-trash"></i>
+                        </button>
+                      </React.Fragment>
                     </>
                   );
                 })}
               </>
             ) : (
-              <>empty</>
+              <>No favorites yet</>
             )}
           </ul>
         </div>

@@ -11,14 +11,21 @@
 }
 .navbar {
   background: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .logo {
-  height: 190px;
-  width: 500px;
+  height: 200px;
+  width: 425px;
+}
+.galaxy {
+  height: auto;
+  width: 100%;
+  max-width: 300px;
 }
 .nav-item {
-  float: right;
-  margin-left: -300px;
+  position: relative;
 }
 .characters {
   height: 45px;
@@ -67,4 +74,41 @@ footer span {
 .dropdown {
   position: absolute;
   right: 100px;
+  width: 200px;
+  margin-top: -30px;
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 9rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+.dropdown-menu.show {
+  display: block;
+}
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
 }
